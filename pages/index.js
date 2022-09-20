@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Accordion from '../Components/Accordion'
 import Footer from '../Components/Footer'
 import Jeux from '../Components/Jeux'
 
@@ -11,9 +12,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <Accordion />
+
       <main>
         <div>
-        <Jeux/>
+        {/* <Jeux/> */}
         </div>
 
       </main>

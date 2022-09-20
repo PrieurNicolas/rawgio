@@ -1,0 +1,60 @@
+.datadiv{
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.divimage{
+    display: flex;
+
+}
+
+.arrowdiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow1{
+    height: 40px;
+    width: 40px;
+}
+
+.arrow2{
+    height: 40px;
+    width: 40px;
+}
+
+.h3nom{
+    padding-left: 100px;
+    font-size: 40px;
+}
+
+.single {
+    display:flex;
+    padding: 2px 16px;
+    margin: 20px 10px;
+    justify-content: space-between;
+}
+.single:hover {
+    border-left: 8px solid #4979ff;
+}
+
+.genre{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    border: solid 3px #64CEAA;
+    border-radius: 0 0px 100px 0;
+    margin: 0 10 0 10;
+    background-color: #006AB0;
+}
+
+.children{
+    background-color: #006AB0;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 0px 16px;
+    margin: 0px 150px;
+    border: solid 3px orange;
+}
