@@ -19,6 +19,7 @@ function Accordion() {
 
     return (
         <div className={Style.datadiv}>
+            <div className={Style.divtitre}><h1 className={Style.titre}>Genres :</h1></div>
             {allGenres.results?.map((data) => {
                 return (
                     <AccordionUI

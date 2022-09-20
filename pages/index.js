@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Accordion from '../Components/Accordion'
 import Footer from '../Components/Footer'
+import Genre from '../Components/Genre'
+import Gta from '../Components/Gta'
 import Jeux from '../Components/Jeux'
 
 export default function Home() {
@@ -16,7 +18,9 @@ export default function Home() {
 
       <main>
         <div>
+        {/* <Genre/> */}
         {/* <Jeux/> */}
+        {/* <Gta/> */}
         </div>
 
       </main>

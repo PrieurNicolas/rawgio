@@ -1,10 +1,24 @@
-import React from "react"
+import React, { useEffect, useState } from 'react'
 import { HiArrowCircleDown, HiX } from "react-icons/hi"
 import Style from '../styles/Accordion.module.css'
 import Image from "next/image";
 
 const AccordionUI = ({image, title, children, Id, Index, setIndex }) => {
     const handleSetIndex = (Id) => Index !== Id && setIndex(Id);
+
+    const fetchAllJeux = async () => {
+        const res = await fetch('https://api.rawg.io/api/games?key=84e32df10f2943d1940ca4a7ff21baf8');
+        const allJeux = await res.json({});
+        setAllJeux(allJeux);
+      }
+    
+    useEffect(() => {
+        fetchAllJeux();
+      }, [])
+    
+      const [allJeux, setAllJeux] = useState([]);
+    
+      console.log(allJeux);
 
     return (
         <>
@@ -25,7 +39,15 @@ const AccordionUI = ({image, title, children, Id, Index, setIndex }) => {
 
             {Index === Id && (
                 <div className={Style.children}>
-                    {children}
+                    
+                    {allJeux.results?.map(jeux => (
+            <div key={jeux.id} className={Style.single}>
+                <a>
+                    <div className={Style.divimage}><Image height={100} width={200} src={jeux.background_image}></Image><h1 className={Style.h3nom}>{jeux.name}</h1></div>
+                </a>
+            </div>
+        ))}
+
                 </div>
             )}
         </>
