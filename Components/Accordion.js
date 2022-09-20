@@ -25,8 +25,7 @@ function Accordion() {
                     <AccordionUI
                     image={data.image_background}
                     title={data.name} 
-                    Id={data.id} 
-                    children={data.slug} 
+                    Id={data.id}
                     Index={Index} 
                     setIndex={setIndex}>
                     </AccordionUI>

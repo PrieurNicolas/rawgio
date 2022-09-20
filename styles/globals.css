@@ -10,7 +10,7 @@ body {
 
 *::-webkit-scrollbar,
 *::-webkit-scrollbar-thumb {
-  color: #64CEAA;
+  color: orange;
   width: 10px;
   border-radius: 13px;
   border: 2px solid transparent;
