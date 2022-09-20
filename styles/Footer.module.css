@@ -3,5 +3,5 @@
     background-color: aliceblue;
     text-align: center;
     bottom: 0%;
-    position: fixed;
+    position: static ;
 }

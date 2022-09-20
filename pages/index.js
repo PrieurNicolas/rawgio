@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import Footer from '../Components/Footer'
+import Jeux from '../Components/Jeux'
 
 export default function Home() {
   return (
@@ -12,6 +12,9 @@ export default function Home() {
       </Head>
 
       <main>
+        <div>
+        <Jeux/>
+        </div>
 
       </main>
 
