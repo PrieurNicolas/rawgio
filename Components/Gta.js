@@ -2,30 +2,35 @@
 // import Image from 'next/image';
 // import Style from '../styles/Jeux.module.css'
 // export default function Gta() {
+
+//     const [allJeux2, setAllJeux2] = useState([]);
     
-//     const fetchAllJeux = async () => {
+//     const fetchAllJeux2 = async () => {
 //         const res = await fetch('https://api.rawg.io/api/games/3498?key=84e32df10f2943d1940ca4a7ff21baf8');
-//         const allJeux = await res.json({});
-//         setAllJeux(allJeux);
+//         const allJeux2 = await res.json({});
+//         setAllJeux2(allJeux2);
 //       }
 
 //     useEffect(() => {
-//         fetchAllJeux();
+//         fetchAllJeux2();
 //       }, [])
     
-//       const [allJeux, setAllJeux] = useState([]);
 
-//       console.log(allJeux);
+//       console.log(allJeux2);
 
 //   return (
 //     <>
-//         {allJeux.genres?.map(jeux => (
-//             <div key={jeux.id}>
+//         {allJeux2.developers?.map(data => (
+//             <>
+//             <div key={data.id}>
 //                 <a>
-//                     <div ><h1>{jeux.slug}</h1></div>
+//                     <div><h1>{data.name}</h1></div>
 //                 </a>
 //             </div>
+//             </>
 //         ))}
+
+//         <h3>{allJeux2.playtime}</h3>
 //     </>
 //   )
 // }

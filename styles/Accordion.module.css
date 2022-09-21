@@ -1,9 +1,9 @@
-.titre{
+.titre {
     padding: 0;
     margin: 20px;
 }
 
-.divtitre{
+.divtitre {
     display: flex;
     align-content: center;
     justify-content: center;
@@ -14,49 +14,50 @@
     height: 100px;
 }
 
-.datadiv{
+.datadiv {
     justify-content: center;
     align-items: center;
     height: auto;
 }
 
-.divimage{
+.divimage {
     display: flex;
 
 }
 
-.arrowdiv{
+.arrowdiv {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.arrow1{
+.arrow1 {
     height: 40px;
     width: 40px;
 }
 
-.arrow2{
+.arrow2 {
     height: 40px;
     width: 40px;
 }
 
-.h3nom{
+.h3nom {
     padding-left: 100px;
     font-size: 40px;
 }
 
 .single {
-    display:flex;
+    display: flex;
     padding: 2px 16px;
     margin: 20px 10px;
     justify-content: space-between;
 }
+
 .single:hover {
     border-left: 8px solid #4979ff;
 }
 
-.genre{
+.genre {
     width: 100%;
     display: flex;
     justify-content: left;
@@ -66,11 +67,42 @@
     background-color: #006AB0;
 }
 
-.children{
-    background-color: #006AB0;
+.children {
+    background: linear-gradient(90deg, rgba(0,106,176,100) 0%, rgba(9,9,121,1) 75%, rgba(0,212,255,1) 100%);
     font-size: 25px;
     font-weight: bold;
     padding: 0px 16px;
     margin: 0px 150px;
     border: solid 3px orange;
+}
+
+.h3jeux {
+    font-size: 35px;
+    margin-left: 100px;
+}
+
+.preleased {
+    margin-left: auto;
+    margin-right: 80px;
+    font-size: 20px;
+    align-self: center;
+    border: solid 1px;
+    border-radius: 10px;
+}
+
+.divimagejeux {
+    display: flex;
+    width: 100%;
+    border: 3px solid brown;
+}
+
+.singlejeux {
+    display: block;
+    width: 100%;
+    padding: 2px 16px;
+    margin: 20px 10px;
+}
+
+.singlejeux:hover {
+    border-left: 8px solid #4979ff;
 }
