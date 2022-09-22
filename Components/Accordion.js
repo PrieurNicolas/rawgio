@@ -6,7 +6,7 @@ function Accordion() {
     const [Index, setIndex] = useState(false);
 
     const fetchAllGenres = async () => {
-        const res = await fetch('https://api.rawg.io/api/genres?key=84e32df10f2943d1940ca4a7ff21baf8');
+        const res = await fetch('https://api.rawg.io/api/genres?key=cd68cf822b8b4b59adf1c46ac1ea961c');
         const allGenres = await res.json();
         setAllGenres(allGenres);
       }

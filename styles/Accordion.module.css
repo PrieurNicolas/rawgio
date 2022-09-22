@@ -10,7 +10,7 @@
     text-align: center;
     margin: 0;
     padding: 0;
-    background-color: #006AB0;
+    background: linear-gradient(90deg, #0052D4, #4364F4 80%, #6FB1FC 100%);
     height: 100px;
 }
 
